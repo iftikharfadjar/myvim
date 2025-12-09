@@ -1,0 +1,85 @@
+{
+    "go.toolsManagement.autoUpdate": true,
+    "git.autofetch": true,
+    "editor.formatOnSave": true,
+    "editor.fontSize": 18,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ] // Command to focus the explorer
+        },
+        {
+            "before": [
+                "<leader>",
+                "r"
+            ],
+            "after": [
+                ":",
+                "r",
+                "e",
+                "g",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "l",
+                "l"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "l",
+                "l"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "never"
+}
