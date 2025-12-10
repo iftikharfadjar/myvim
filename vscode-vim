@@ -8,6 +8,8 @@
     "vim.useCtrlKeys": true,
     "vim.easymotion": true,
     "vim.incsearch": true,
+    "editor.lineNumbers": "relative",
+    "vim.smartRelativeLine": true,
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
