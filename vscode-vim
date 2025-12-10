@@ -46,8 +46,8 @@
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "l",
-                "l"
+                ";",
+                ";"
             ],
             "after": [
                 "<Esc>"
