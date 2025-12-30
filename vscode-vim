@@ -1,8 +1,15 @@
 {
-    "go.toolsManagement.autoUpdate": true,
-    "git.autofetch": true,
+    "remote.SSH.remotePlatform": {
+        "192.168.100.113": "linux"
+    },
+    "editor.minimap.enabled": false,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "files.autoSave": "afterDelay",
+    "editor.fontVariations": false,
+    "editor.fontSize": 12,
+    "terminal.integrated.fontSize": 18,
+    "redhat.telemetry.enabled": true,
     "editor.formatOnSave": true,
-    "editor.fontSize": 18,
     "vim.leader": "<space>",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
@@ -10,7 +17,32 @@
     "vim.incsearch": true,
     "editor.lineNumbers": "relative",
     "vim.smartRelativeLine": true,
+    //Normal Mode Key Bindings
     "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "commands": [
+                "flash-vscode.start"
+            ]
+        },
+        {
+            "before": [
+                "S"
+            ],
+            "commands": [
+                "flash-vscode.startSelection"
+            ]
+        },
+        {
+            "before": [
+                "<BS>"
+            ],
+            "commands": [
+                "flash-vscode.backspace"
+            ]
+        },
         {
             "before": [
                 "<leader>",
@@ -35,19 +67,29 @@
         },
         {
             "before": [
-                "<leader>",
-                "w"
+                "<C-s>"
             ],
             "commands": [
                 "workbench.action.files.save"
+            ]
+        },
+        {
+            "before": [
+                "<C-a>"
+            ],
+            "after": [
+                "g",
+                "g",
+                "0",
+                "V",
+                "G"
             ]
         }
     ],
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
-                ";",
-                ";"
+                "<C-c>"
             ],
             "after": [
                 "<Esc>"
@@ -55,19 +97,18 @@
         },
         {
             "before": [
-                "<leader>",
-                "w"
+                "<C-s>"
             ],
             "commands": [
                 "workbench.action.files.save"
             ]
         }
     ],
+    //Normal Mode Key Bindings
     "vim.visualModeKeyBindingsNonRecursive": [
         {
             "before": [
-                "l",
-                "l"
+                "<C-c>"
             ],
             "after": [
                 "<Esc>"
@@ -75,13 +116,17 @@
         },
         {
             "before": [
-                "<leader>",
-                "w"
+                "<C-s>"
             ],
             "commands": [
                 "workbench.action.files.save"
             ]
         }
     ],
-    "javascript.updateImportsOnFileMove.enabled": "never"
+    "python.defaultInterpreterPath": "c:\\Python312\\python.exe",
+    "workbench.editor.wrapTabs": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "git.openRepositoryInParentFolders": "always",
 }
