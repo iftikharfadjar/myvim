@@ -19,6 +19,7 @@
     "vim.smartRelativeLine": true,
     //Normal Mode Key Bindings
     "vim.normalModeKeyBindingsNonRecursive": [
+        //flash
         {
             "before": [
                 "s"
@@ -65,6 +66,7 @@
                 "<CR>"
             ]
         },
+        //periscope
         {
             "before": [
                 "<leader>",
@@ -97,6 +99,102 @@
                 "V",
                 "G"
             ]
+        },
+        //harpoon
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "a"
+            ],
+            "commands": [
+                "cursor-harpoon.addEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "x"
+            ],
+            "commands": [
+                "cursor-harpoon.editEditors"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "e"
+            ],
+            "commands": [
+                "cursor-harpoon.editorQuickPick"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "1"
+            ],
+            "commands": [
+                "cursor-harpoon.gotoEditor1"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "2"
+            ],
+            "commands": [
+                "cursor-harpoon.gotoEditor2"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "3"
+            ],
+            "commands": [
+                "cursor-harpoon.gotoEditor3"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "4"
+            ],
+            "commands": [
+                "cursor-harpoon.gotoEditor4"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "5"
+            ],
+            "commands": [
+                "cursor-harpoon.gotoEditor5"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "h"
+            ],
+            "commands": [
+                "cursor-harpoon.navigateNextEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "h",
+                "h"
+            ],
+            "commands": [
+                "cursor-harpoon.navigatePreviousEditor"
+            ]
         }
     ],
     "vim.insertModeKeyBindingsNonRecursive": [
@@ -119,6 +217,30 @@
     ],
     //Normal Mode Key Bindings
     "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "s"
+            ],
+            "commands": [
+                "flash-vscode.start"
+            ]
+        },
+        {
+            "before": [
+                "S"
+            ],
+            "commands": [
+                "flash-vscode.startSelection"
+            ]
+        },
+        {
+            "before": [
+                "<BS>"
+            ],
+            "commands": [
+                "flash-vscode.backspace"
+            ]
+        },
         {
             "before": [
                 "<C-c>"
