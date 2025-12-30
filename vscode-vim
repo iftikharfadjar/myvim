@@ -70,12 +70,38 @@
         {
             "before": [
                 "<leader>",
-                "f",
-                "w"
+                "s",
+                "g"
             ],
             "commands": [
                 {
                     "command": "periscope.search",
+                    "when": "editorTextFocus"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "/"
+            ],
+            "commands": [
+                {
+                    "command": "periscope.searchCurrentFile",
+                    "when": "editorTextFocus"
+                }
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "s",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "periscope.searchFiles",
                     "when": "editorTextFocus"
                 }
             ]
