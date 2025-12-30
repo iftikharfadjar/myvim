@@ -67,6 +67,19 @@
         },
         {
             "before": [
+                "<leader>",
+                "f",
+                "w"
+            ],
+            "commands": [
+                {
+                    "command": "periscope.search",
+                    "when": "editorTextFocus"
+                }
+            ]
+        },
+        {
+            "before": [
                 "<C-s>"
             ],
             "commands": [
