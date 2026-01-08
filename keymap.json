@@ -85,6 +85,12 @@
     },
   },
   {
+  "context": "Editor && vim_mode == insert",
+  "bindings": {
+    "j k": "vim::NormalBefore"
+  },
+},
+  {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       // Refactoring
