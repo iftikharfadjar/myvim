@@ -28,6 +28,14 @@
             "before": ["[", "b"],
             "commands": ["workbench.action.previousEditor"]
         },
+        {
+            "before": ["]", "n"],
+            "commands": ["workbench.action.navigateForward"]
+       },
+       {
+            "before": ["[", "n"],
+            "commands": ["workbench.action.navigateBack"]
+       },
         // {
         //     "before": ["<leader>", "b"],
         //     "commands": ["workbench.action.quickOpen"]
