@@ -226,6 +226,15 @@
     "vim.insertModeKeyBindingsNonRecursive": [
         {
             "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        },
+        {
+            "before": [
                 "<C-c>"
             ],
             "after": [
@@ -265,6 +274,15 @@
             ],
             "commands": [
                 "flash-vscode.backspace"
+            ]
+        },
+         {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
             ]
         },
         {
