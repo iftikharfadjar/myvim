@@ -17,8 +17,23 @@
     "vim.incsearch": true,
     "editor.lineNumbers": "relative",
     "vim.smartRelativeLine": true,
-    //Normal Mode Key Bindings
-    "vim.normalModeKeyBindingsNonRecursive": [
+    // "search.quickOpen.includeSymbols": false,
+    // "search.quickOpen.includeHistory": true,
+   "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["]", "b"],
+            "commands": ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["[", "b"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+        // {
+        //     "before": ["<leader>", "b"],
+        //     "commands": ["workbench.action.quickOpen"]
+        // },
+
+
         //flash
         {
             "before": [
@@ -83,6 +98,18 @@
         {
             "before": [
                 "<leader>",
+                "b",
+            ],
+            "commands": [
+                {
+                    "command": "periscope.searchBuffers",
+                    "when": "editorTextFocus"
+                }
+            ]
+        },  
+        {
+            "before": [
+                "<leader>",
                 "s",
                 "/"
             ],
@@ -134,7 +161,7 @@
                 "a"
             ],
             "commands": [
-                "cursor-harpoon.addEditor"
+                "vscode-harpoon.addEditor"
             ]
         },
         {
@@ -144,7 +171,7 @@
                 "x"
             ],
             "commands": [
-                "cursor-harpoon.editEditors"
+                "vscode-harpoon.editEditors"
             ]
         },
         {
@@ -154,7 +181,7 @@
                 "e"
             ],
             "commands": [
-                "cursor-harpoon.editorQuickPick"
+                "vscode-harpoon.editorQuickPick"
             ]
         },
         {
@@ -163,7 +190,7 @@
                 "1"
             ],
             "commands": [
-                "cursor-harpoon.gotoEditor1"
+                "vscode-harpoon.gotoEditor1"
             ]
         },
         {
@@ -172,7 +199,7 @@
                 "2"
             ],
             "commands": [
-                "cursor-harpoon.gotoEditor2"
+                "vscode-harpoon.gotoEditor2"
             ]
         },
         {
@@ -181,7 +208,7 @@
                 "3"
             ],
             "commands": [
-                "cursor-harpoon.gotoEditor3"
+                "vscode-harpoon.gotoEditor3"
             ]
         },
         {
@@ -190,7 +217,7 @@
                 "4"
             ],
             "commands": [
-                "cursor-harpoon.gotoEditor4"
+                "vscode-harpoon.gotoEditor4"
             ]
         },
         {
@@ -199,7 +226,7 @@
                 "5"
             ],
             "commands": [
-                "cursor-harpoon.gotoEditor5"
+                "vscode-harpoon.gotoEditor5"
             ]
         },
         {
@@ -209,7 +236,7 @@
                 "h"
             ],
             "commands": [
-                "cursor-harpoon.navigateNextEditor"
+                "vscode-harpoon.navigateNextEditor"
             ]
         },
         {
@@ -219,7 +246,7 @@
                 "h"
             ],
             "commands": [
-                "cursor-harpoon.navigatePreviousEditor"
+                "vscode-harpoon.navigatePreviousEditor"
             ]
         }
     ],
