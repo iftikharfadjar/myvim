@@ -36,6 +36,10 @@
             "before": ["[", "n"],
             "commands": ["workbench.action.navigateBack"]
        },
+{
+    "before": ["<leader>", "c"],
+    "commands": ["workbench.action.closeActiveEditor"]
+  },
         // {
         //     "before": ["<leader>", "b"],
         //     "commands": ["workbench.action.quickOpen"]
