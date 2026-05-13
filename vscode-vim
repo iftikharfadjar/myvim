@@ -17,33 +17,43 @@
     "vim.incsearch": true,
     "editor.lineNumbers": "relative",
     "vim.smartRelativeLine": true,
+    "vim.surround": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.replaceWithRegister": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.argumentObjectSeparators": [",", ";"],
+    "vim.argumentObjectOpeningDelimiters": ["(", "["],
+    "vim.argumentObjectClosingDelimiters": [")", "]"],
     // "search.quickOpen.includeSymbols": false,
     // "search.quickOpen.includeHistory": true,
    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": ["]", "b"],
-            "commands": ["workbench.action.nextEditor"]
-        },
-        {
-            "before": ["[", "b"],
-            "commands": ["workbench.action.previousEditor"]
-        },
-        {
-            "before": ["]", "n"],
-            "commands": ["workbench.action.navigateForward"]
-       },
-       {
-            "before": ["[", "n"],
-            "commands": ["workbench.action.navigateBack"]
-       },
-{
-    "before": ["<leader>", "c"],
-    "commands": ["workbench.action.closeActiveEditor"]
-  },
-  {
-    "before": ["<leader>", "g", "f"],
-    "commands": ["editor.action.goToReferences"]
-  },
+     
+    {
+        "before": ["]", "b"],
+        "commands": ["workbench.action.nextEditor"]
+    },
+    {
+        "before": ["[", "b"],
+        "commands": ["workbench.action.previousEditor"]
+    },
+    {
+        "before": ["]", "n"],
+        "commands": ["workbench.action.navigateForward"]
+    },
+    {
+        "before": ["[", "n"],
+        "commands": ["workbench.action.navigateBack"]
+    },
+    {
+        "before": ["<leader>", "c"],
+        "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+        "before": ["<leader>", "g", "r"],
+        "commands": ["editor.action.goToReferences"]
+    },
         // {
         //     "before": ["<leader>", "b"],
         //     "commands": ["workbench.action.quickOpen"]
