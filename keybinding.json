@@ -46,4 +46,36 @@
         },
         "when": "!sideBarFocus && inputFocus"
     },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+'",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "[ n",
+        "command": "workbench.action.navigateBack",
+        "when": "editorTextFocus"
+    },{
+        "key": "] n",
+        "command": "workbench.action.navigateForward",
+        "when": "editorTextFocus"
+    },{
+        "key": "] b",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.nextEditor",
+            ]
+        },
+        "when": "!sideBarFocus && inputFocus"
+    },
+    {
+        "key": "[ b",
+        "command": "workbench.action.previousEditor",
+        "when": "!sideBarFocus && inputFocus"
+    },
 ]
