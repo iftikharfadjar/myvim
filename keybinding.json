@@ -16,6 +16,10 @@
         "when": "vim.mode == 'Normal' && editorTextFocus && !sideBarFocus"
     },
     {
+        "key": "space c",
+        "command": "workbench.action.closeActiveEditor",
+        "when": "vim.mode == 'Normal' && editorTextFocus && !sideBarFocus"
+    },{
         "key": "space e",
         "command": "runCommands",
         "args": {
